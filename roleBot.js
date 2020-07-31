@@ -11,6 +11,7 @@ client.on('ready', () => {
 })
 
 client.on('message', message => {
+    
     try {
     const validChannel = "role-management"
     const channel = message.channel
@@ -35,7 +36,7 @@ client.on('message', message => {
     roleIdString = roleIdString.replace(",", "")
 
     let memberVar = message.guild.members.cache.get(userNameString);
-    console.log(memberVar)
+    
     if (channelName === validChannel) {
         if(message.member.hasPermission('ADMINISTRATOR')) {
             if (message.content.startsWith(`${prefix}ar`)) {
@@ -67,7 +68,7 @@ client.on('message', message => {
        }   }
     }
     catch(err) {
-        console.log("Brug")
+        //pass
     }
 })  
 
