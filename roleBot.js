@@ -60,20 +60,6 @@ client.on('message', message => {
         channel.send("Invalid permissions!")
     }
 })  
-
-        
-
-    
+   
 client.login(token)
 
-/*
-if(message.member.roles.cache.has(roleIdString)) {
-    message.channel.send("You already have this role!");
-    return;
-}
-*/
-/*
-            memberVar.roles.add(roleIdString)
-            .then(member => message.channel.send("Role Added!"))
-            .catch(err => { message.channel.send("Something went wrong...");})
-*/
